@@ -1,0 +1,18 @@
+spring:
+  jpa:
+    show-sql: false
+    properties:
+      hibernate:
+          format_sql: false
+          dialect: org.hibernate.dialect.HSQLDialect
+    hibernate:
+      ddl-auto: none
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+    generate-ddl: false
+  driverClassName: org.hsqldb.jdbc.JDBCDriver
+  url: jdbc:hsqldb:file:unitdb
+  username: sa
+  password:
+
+
